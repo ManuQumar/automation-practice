@@ -1,0 +1,21 @@
+# Node
+node_modules/
+
+# Playwright
+/playwright-features/test-results/
+/playwright-features/playwright-report/
+/playwright-features/blob-report/
+/playwright-features/playwright/.cache/
+/playwright-features/playwright/.auth/
+
+# TypeScript compiled output
+*.js.map
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
