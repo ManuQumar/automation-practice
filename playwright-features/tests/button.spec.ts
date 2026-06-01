@@ -1,7 +1,5 @@
 import { test, expect, Page } from '@playwright/test'
-
-test.describe("Button test suite", () => {
-    const goToHomeButton = (page: Page) => page.locator("#home");
+const goToHomeButton = (page: Page) => page.locator("#home");
 
     const buttonLocation = (page: Page) => page.locator("#position")
 
@@ -12,6 +10,8 @@ test.describe("Button test suite", () => {
     const disabledButton = (page: Page) => page.locator("//button[contains(text(),'Disabled')]");
 
     const holdOnButton = (page: Page) => page.locator("//*[contains(text(),' Button Hold!')]/ancestor::button");
+
+test.describe("Button test suite", () => {
 
     test.beforeEach(async ({ page }) => {
         await page.goto("https://letcode.in/button");
