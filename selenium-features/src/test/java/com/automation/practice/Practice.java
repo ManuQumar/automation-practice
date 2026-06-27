@@ -1,4 +1,4 @@
-//package com.automation.practice;
+package com.automation.practice;
 
 public class Practice {
     public static void main(String[] args) {
